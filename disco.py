@@ -1,6 +1,6 @@
 # %%
 """
-<a href="https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/jakubknejzlik/disco-diffusion/blob/main/Disco_Diffusion.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 """
 
 # %%
@@ -397,7 +397,7 @@ if is_colab:
   print(multipip_res)
   subprocess.run(['apt', 'install', 'imagemagick'], stdout=subprocess.PIPE).stdout.decode('utf-8')
   gitclone("https://github.com/isl-org/MiDaS.git")
-  gitclone("https://github.com/alembics/disco-diffusion.git")
+  gitclone("https://github.com/jakubknejzlik/disco-diffusion.git")
   pipi("pytorch-lightning")
   pipi("omegaconf")
   pipi("einops")

@@ -1,52 +1,56 @@
 # Disco Diffusion
 
-<a href="https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
+<a href="https://colab.research.google.com/github/jakubknejzlik/disco-diffusion/blob/main/Disco_Diffusion.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/></a>
 
 A frankensteinian amalgamation of notebooks, models and techniques for the generation of AI Art and Animations.
 
 [to be updated with further info soon]
 
-
-
-
 ## Changelog
-#### v1 Oct 29th 2021 - Somnai  
-* Initial QoL improvements added, including user friendly UI, settings+prompt saving and improved google drive folder organization.
+
+#### v1 Oct 29th 2021 - Somnai
+
+- Initial QoL improvements added, including user friendly UI, settings+prompt saving and improved google drive folder organization.
 
 #### v1.1 Nov 13th 2021 - Somnai
-* Now includes sizing options, intermediate saves and fixed image prompts and perlin inits. unexposed batch option since it doesn't work
+
+- Now includes sizing options, intermediate saves and fixed image prompts and perlin inits. unexposed batch option since it doesn't work
 
 #### v2 Update: Nov 22nd 2021 - Somnai
-* Initial addition of Katherine Crowson's Secondary Model Method (https://colab.research.google.com/drive/1mpkrhOjoyzPeSWy2r7T8EYRaU7amYOOi#scrollTo=X5gODNAMEUCR)
-* Fix for incorrectly named settings files
+
+- Initial addition of Katherine Crowson's Secondary Model Method (https://colab.research.google.com/drive/1mpkrhOjoyzPeSWy2r7T8EYRaU7amYOOi#scrollTo=X5gODNAMEUCR)
+- Fix for incorrectly named settings files
 
 #### v3 Update: Dec 24th 2021 - Somnai
-* Implemented Dango's advanced cutout method
-* Added SLIP models, thanks to NeuralDivergent
-* Fixed issue with NaNs resulting in black images, with massive help and testing from @Softology
-* Perlin now changes properly within batches (not sure where this perlin_regen code came from originally, but thank you)
+
+- Implemented Dango's advanced cutout method
+- Added SLIP models, thanks to NeuralDivergent
+- Fixed issue with NaNs resulting in black images, with massive help and testing from @Softology
+- Perlin now changes properly within batches (not sure where this perlin_regen code came from originally, but thank you)
 
 #### v4 Update: Jan 2021 - Somnai
-* Implemented Diffusion Zooming
-* Added Chigozie keyframing
-* Made a bunch of edits to processes
+
+- Implemented Diffusion Zooming
+- Added Chigozie keyframing
+- Made a bunch of edits to processes
 
 #### v4.1 Update: Jan 14th 2021 - Somnai
-* Added video input mode
-* Added license that somehow went missing
-* Added improved prompt keyframing, fixed image_prompts and multiple prompts
-* Improved UI
-* Significant under the hood cleanup and improvement
-* Refined defaults for each mode
-* Removed SLIP models for the time being due to import conflicts
-* Added latent-diffusion SuperRes for sharpening
-* Added resume run mode
+
+- Added video input mode
+- Added license that somehow went missing
+- Added improved prompt keyframing, fixed image_prompts and multiple prompts
+- Improved UI
+- Significant under the hood cleanup and improvement
+- Refined defaults for each mode
+- Removed SLIP models for the time being due to import conflicts
+- Added latent-diffusion SuperRes for sharpening
+- Added resume run mode
 
 #### v5 Update: Feb 20th 2022 - gandamu / Adam Letts
-* Added 3D animation mode. Uses weighted combination of AdaBins and MiDaS depth estimation models. Uses pytorch3d for 3D transforms on Colab and/or Linux.
 
+- Added 3D animation mode. Uses weighted combination of AdaBins and MiDaS depth estimation models. Uses pytorch3d for 3D transforms on Colab and/or Linux.
 
-## Notebook Provenance 
+## Notebook Provenance
 
 Original notebook by Katherine Crowson (https://github.com/crowsonkb, https://twitter.com/RiversHaveWings). It uses either OpenAI's 256x256 unconditional ImageNet or Katherine Crowson's fine-tuned 512x512 diffusion model (https://github.com/openai/guided-diffusion), together with CLIP (https://github.com/openai/CLIP) to connect text prompts with images.
 
